@@ -6,18 +6,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- SOURCE: https://css-tricks.com/snippets/css/typewriter-effect/ -->
-    <script type="text/javascript" src="typewriter.js">            
+    <script type="text/javascript" src="jsscripts/typewriter.js">            
     </script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/ico" href="img/favicon.ico">
 
     <title>Bill Cao - Student at UC Berkeley</title>
 
     <style>
         body { 
-            animation: fadeInAnimation ease 2s 
+            /* animation: fadeInAnimation ease 2s  */
         } 
   
         @keyframes fadeInAnimation { 
@@ -27,11 +29,39 @@
             100% { 
                 opacity: 1; 
             } 
-        } 
+        }
         
+        @keyframes goDown {
+            0% { 
+                transform: translateY(0); 
+            }
+
+            100% { 
+                transform: translateY(-15%);
+            }
+        }
+
+        @keyframes goUp {
+            0% { 
+                transform: translateY(0); 
+            }
+
+            100% { 
+                transform: translateY(15%);
+            }
+        }
+
         html {
             height: 100%;
             margin: 0;
+        }
+
+        .movedown {
+            animation: goDown ease forwards 2s
+        }
+
+        .moveup {
+            animation: goUp ease forwards 2s
         }
         
         footer {
@@ -64,16 +94,15 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-    <div class="bg">
         <nav class="navbar navbar-expand-sm navbar-light bg-transparent" style="margin-left: 20px; margin-right: 20px;">
             
-            <a class="navbar-brand" href="#" style="font-size:xx-large;">bill.cao</a>
+            <a class="navbar-brand" href="#" style="font-size: 400%">bill.cao</a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarNav" style="justify-self: flex-end;">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item">
@@ -85,25 +114,30 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#Contact" style="font-size:x-large;">contact</a>
+                        <a class="nav-link" href="contact.html" style="font-size:x-large;">contact</a>
                     </li>
 
                 </ul>
             </div>
 
         </nav>
+        
 
         <div class="container-fluid">
-            <div class="row" style="padding: 10px">
-                <div class="col-md-5" style="padding: 10px">
-                    <img src="img/me.jpg" style="padding: 10px; width: 100%; padding-top: 50px">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <img class="movedown" src="img/sfoutlinetry2.png" style="padding: 10px; width: 100%; padding-top: 50px">
+                        <img class="moveup" src="img/oaklandline.png" style="padding: 10px; width: 100%; ">
+                    </div>
                 </div>
 
-                <div class="col-md-5" style="margin-top: 10%; margin-left: 20px">
-                    <h1 style="font-size: 350%; color: #000;"> hey i'm bill </h1>
+                <div class="col-md-4
+                " style="margin-top: 10%; margin-left: 20px">
+                    <h1 class="title-text" style="color: #0070FF;"> hey i'm bill </h1>
                     
                     <h1>
-                        <a href="" class="typewrite" data-period="2000" style="font-family: monospace;" 
+                        <a href="" class="typewrite" data-period="2000" style="font-family: monospace; color: #000;" 
                         data-type='[ " comp sci, data sci @ berkeley l&s", " public policy @ berkeley goldman", " urbanist, transit enthusiast", " thrifting aficionado" ]'>
                           <span class="wrap"></span>
                         </a>
@@ -111,11 +145,10 @@
 
         
 
-                    <p style="margin-top: 20px; font-size: 150%; color: #000;"> i'm interested in bridging the gap between people, computing, and data especially when it comes to sustainability </p>
+                    <p style="margin-top: 20px; font-size: 150%;"> i'm interested in bridging the gap between people, computing, and data especially when it comes to sustainability <br> <br> welcome to my website, hope you find what you're looking for </p>
                 
                 </div>
             </div>
         </div>
-    </div>
 </body>
 </html>

@@ -5,6 +5,12 @@
     white-space: nowrap;
     overflow: hidden;
   }
+
+  .title-text {
+    font-size: 350%; 
+    color: #0070FF;
+  }
+
   .css-typing p:nth-child(1) {
     width: 15.3em;
     -webkit-animation: type 4s steps(400, end);

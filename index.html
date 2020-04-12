@@ -18,50 +18,9 @@
     <title>Bill Cao - Student at UC Berkeley</title>
 
     <style>
-        body { 
-            /* animation: fadeInAnimation ease 2s  */
-        } 
-  
-        @keyframes fadeInAnimation { 
-            0% { 
-                opacity: 0; 
-            } 
-            100% { 
-                opacity: 1; 
-            } 
-        }
-        
-        @keyframes goDown {
-            0% { 
-                transform: translateY(0); 
-            }
-
-            100% { 
-                transform: translateY(-15%);
-            }
-        }
-
-        @keyframes goUp {
-            0% { 
-                transform: translateY(0); 
-            }
-
-            100% { 
-                transform: translateY(15%);
-            }
-        }
-
         html {
             height: 100%;
             margin: 0;
-        }
-
-        .movedown {
-            animation: goDown ease forwards 2s
-        }
-
-        .moveup {
-            animation: goUp ease forwards 2s
         }
         
         footer {
@@ -94,61 +53,60 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-        <nav class="navbar navbar-expand-sm navbar-light bg-transparent" style="margin-left: 20px; margin-right: 20px;">
+        
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent" style="margin-left: 20px; margin-right: 20px;">
             
-            <a class="navbar-brand" href="#" style="font-size: 400%">bill.cao</a>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+        <a class="navbar-brand" href="index.html" style="font-size: 400%">bill.cao</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html" style="font-size:x-large;">about me</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html" style="font-size:x-large;">things i've done</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="font-size:x-large;">contact</a>
+                </li>
+    
+            </ul>
+        </div>
+    </nav>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html" style="font-size:x-large;">about me</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html" style="font-size:x-large;">projects</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" style="font-size:x-large;">contact</a>
-                    </li>
-
-                </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <img class="movedown" src="img/sfoutlinetry2.png" style="padding: 10px; width: 100%; padding-top: 50px">
+                    <img class="moveup" src="img/oaklandline.png" style="padding: 10px; width: 100%; ">
+                </div>
             </div>
 
-        </nav>
-        
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <div>
-                        <img class="movedown" src="img/sfoutlinetry2.png" style="padding: 10px; width: 100%; padding-top: 50px">
-                        <img class="moveup" src="img/oaklandline.png" style="padding: 10px; width: 100%; ">
-                    </div>
-                </div>
-
-                <div class="col-md-4
-                " style="margin-top: 10%; margin-left: 20px">
-                    <h1 class="title-text" style="color: #0070FF;"> hey i'm bill </h1>
-                    
-                    <h1>
-                        <a href="" class="typewrite" data-period="2000" style="font-family: monospace; color: #000;" 
-                        data-type='[ " comp sci, data sci @ berkeley l&s", " public policy @ berkeley goldman", " urbanist, transit enthusiast", " thrifting aficionado" ]'>
-                          <span class="wrap"></span>
-                        </a>
-                    </h1>
-
-        
-
-                    <p style="margin-top: 20px; font-size: 150%;"> i'm interested in bridging the gap between people, computing, and data especially when it comes to sustainability <br> <br> welcome to my website, hope you find what you're looking for </p>
+            <div class="col-md-4
+            " style="margin-top: 10%; margin-left: 20px">
+                <h1 class="title-text" style="color: #0070FF;"> hey i'm bill </h1>
                 
-                </div>
+                <h1>
+                    <a href="" class="typewrite" data-period="2000" style="font-family: monospace; color: #000;" 
+                    data-type='[ " comp sci, data sci @ berkeley l&s", " public policy @ berkeley goldman", " urbanist, transit enthusiast", " thrifting aficionado" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
+
+    
+
+                <p style="margin-top: 20px; font-size: 150%;"> i'm interested in bridging the gap between people, computing, and data especially when it comes to sustainability <br> <br> welcome to my website, hope you find what you're looking for </p>
+            
             </div>
         </div>
+    </div>
 </body>
 </html>

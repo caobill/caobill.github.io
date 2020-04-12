@@ -6,6 +6,11 @@
     overflow: hidden;
   }
 
+  .navbar-nav > li{
+    padding-left:15px;
+    padding-right:15px;
+  }
+
   .title-text {
     font-size: 350%; 
     color: #0070FF;
@@ -77,3 +82,41 @@
       border-color: tranparent;
     }
   }
+
+  @keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+}
+
+@keyframes goDown {
+    0% { 
+        transform: translateY(0); 
+    }
+
+    100% { 
+        transform: translateY(-15%);
+    }
+}
+
+@keyframes goUp {
+    0% { 
+        transform: translateY(0); 
+    }
+
+    100% { 
+        transform: translateY(15%);
+    }
+}
+
+
+.movedown {
+    animation: goDown ease forwards 2s
+}
+
+.moveup {
+    animation: goUp ease forwards 2s
+}

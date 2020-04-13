@@ -12,8 +12,9 @@
   }
 
   .title-text {
-    font-size: 350%; 
-    color: #0070FF;
+    font-size: 350%;
+    color: #2ebf9e 
+    /* color: #0070FF; */
   }
 
   .css-typing p:nth-child(1) {

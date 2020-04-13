@@ -1,114 +1,180 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- SOURCE: https://css-tricks.com/snippets/css/typewriter-effect/ -->
-    <script type="text/javascript" src="typewriter.js">            
-    </script>
+    <script type="text/javascript" src="typewriter.js"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="icon" type="image/ico" href="img/favicon.ico">
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
 
     <title>Bill Cao - Student at UC Berkeley</title>
 
     <style>
-        body { 
-            animation: fadeInAnimation ease 1s 
-        } 
+      body {
+        animation: fadeInAnimation ease 1s;
+      }
 
-        html {
-            height: 100%;
-            margin: 0;
-        }
-        
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 50px
-        }
-        
-        .bg {
-            height: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        hr {
-            height: 3px;
-            width: 20%;
-        }
-        
+      html {
+        height: 100%;
+        margin: 0;
+      }
 
-        /*div {
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+      }
+
+      .bg {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      hr {
+        height: 3px;
+        width: 20%;
+      }
+
+      /*div {
         border: 3px solid #2a06b4;
       }*/
     </style>
-</head>
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+  <body
+    data-spy="scroll"
+    data-target=".navbar"
+    style="
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    "
+  >
     <div class="bg">
-        <nav class="navbar navbar-expand-sm navbar-light bg-transparent" style="margin-left: 20px; margin-right: 20px;">
-            
-            <a class="navbar-brand" href="index.html" style="font-size: 400%">bill.cao</a>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html" style="font-size:x-large; color: black">about me</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html" style="font-size:x-large;">things i've done</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" style="font-size:x-large;">contact</a>
-                    </li>
-        
-                </ul>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-transparent"
+        style="margin-left: 20px; margin-right: 20px;"
+      >
+        <a class="navbar-brand" href="index.html" style="font-size: 400%;"
+          >bill.cao</a
+        >
 
-        <div class="container-fluid">
-            <div class="row" style="padding: 10px">
-                <div class="col-md-5" style="padding: 10px">
-                    <img src="img/mountainme.jpg" style="padding: 10px; width: 100%; padding-top: 50px">
-                </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="col-md-5" style="margin-top: 10%; margin-left: 20px">
-                    <h1 class="title-text"> a little about me... </h1>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="aboutme.html"
+                style="font-size: x-large; color: black;"
+                >about me</a
+              >
+            </li>
 
-                    <p style="margin-top: 20px; font-size: 150%; color: #000;"> 
-                        i am a junior at the <b><i>university of california, berkeley</i></b> (go bears!!!). i'm double majoring in computer science and data science in L&S as well as minoring in public policy at the goldman school. <br> <br>
-                        i consider myself a man of many talents, including: <br>- software engineering <br>- user experience research <br>- project management <br>- spending way too much money on boba.
-                    </p>
-                </div>
-            </div>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="projects.html"
+                style="font-size: x-large;"
+                >things i've done</a
+              >
+            </li>
 
-            <div class="row" style="padding-left: 10%; padding-right: 10%; text-align: center; margin-top: 20px">
-                    <p style="margin-top: 20px"> 
-                        if you're looking for my resume, please contact me! <br> <br>
-                        let's connect on <a href="https://linkedin.com/in/caobill"> linkedin</a>, so i can get to know you better. you probably don't want the details of my city planning background if you want to know more about my software experience anyway. 
-                    </p>
-            </div>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                style="font-size: x-large;"
+                >contact</a
+              >
+            </li>
+          </ul>
         </div>
-    </div>
+      </nav>
 
-    
-</body>
+      <div class="container-fluid">
+        <div class="row" style="padding: 10px;">
+          <div class="col-md-5" style="padding: 10px;">
+            <img
+              src="img/mountainme.jpg"
+              style="padding: 10px; width: 100%; padding-top: 50px;"
+            />
+          </div>
+
+          <div class="col-md-5" style="margin-top: 10%; margin-left: 20px;">
+            <h1 class="title-text">a little about me...</h1>
+
+            <p style="margin-top: 20px; font-size: 150%; color: #000;">
+              i am a junior at the
+              <b><i>university of california, berkeley</i></b> (go bears!!!).
+              i'm double majoring in computer science and data science in L&S as
+              well as minoring in public policy at the goldman school. <br />
+              <br />
+              i consider myself a man of many talents, including: <br />-
+              software engineering <br />- user experience research <br />-
+              project management <br />- spending way too much money on boba.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid"
+        style="margin-top: 5%; background-color: #0070ff; color:white"
+      >
+        <div
+          class="row"
+          style="padding-left: 15%; padding-right: 15%; margin-top: 20px;"
+        >
+          <p style="font-size: 250%; margin-top: 5%;">
+            if you're looking for my resume, please contact me!
+          </p>
+
+          <p style="margin-top: px;">
+            let's connect on
+            <a style="color: black;" href="https://linkedin.com/in/caobill"
+              ><i><u>linkedin</u></i></a
+            >, so i can get to know you better. you probably don't want the
+            details of my city planning background if you want to know more
+            about my software experience anyway.
+          </p>
+
+          <p style="font-size: 8px; text-align: center;">
+            site designed by me while in quarantine during covid-19 (including
+            skyline animation!)
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

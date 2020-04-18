@@ -1,96 +1,133 @@
+body {
+  font-family: roboto;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px
+}
+
+.bg {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+hr {
+  height: 3px;
+  width: 20%;
+}
+
 .css-typing p {
+  border-right: .15em solid orange;
+  font-family: "Courier";
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  font-family: domine;
+}
+
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.title-text {
+  font-family: domine;
+  font-size: 5em;
+  color: #2ebf9e 
+  /* color: #0070FF; */
+}
+
+.css-typing p:nth-child(1) {
+  width: 15.3em;
+  -webkit-animation: type 4s steps(400, end);
+  animation: type 4s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(1) {
+  width: 20.3em;
+  -webkit-animation: type 4s steps(400, end);
+  animation: type 4s steps(40, end);
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
     border-right: .15em solid orange;
-    font-family: "Courier";
-    font-size: 30px;
-    white-space: nowrap;
-    overflow: hidden;
   }
+  100% {
+    border: none;
+  }
+}
 
-  .navbar-nav > li{
-    padding-left:10px;
-    padding-right:10px;
+@-webkit-keyframes type {
+  0% {
+    width: 0;
   }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
 
-  .title-text {
-    font-size: 450%;
-    color: #2ebf9e 
-    /* color: #0070FF; */
+@keyframes type2 {
+  0% {
+    width: 0;
   }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-left: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
 
-  .css-typing p:nth-child(1) {
-    width: 15.3em;
-    -webkit-animation: type 4s steps(400, end);
-    animation: type 4s steps(40, end);
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
 
-  .css-typing p:nth-child(1) {
-    width: 20.3em;
-    -webkit-animation: type 4s steps(400, end);
-    animation: type 4s steps(40, end);
-    -webkit-animation-fill-mode: backwards;
-    animation-fill-mode: backwards;
-  }
-  
-  @keyframes type {
-    0% {
-      width: 0;
-    }
-    99.9% {
-      border-right: .15em solid orange;
-    }
-    100% {
-      border: none;
-    }
-  }
-  
-  @-webkit-keyframes type {
-    0% {
-      width: 0;
-    }
-    99.9% {
-      border-right: .15em solid orange;
-    }
-    100% {
-      border: none;
-    }
-  }
-  
-  @keyframes type2 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    99.9% {
-      border-left: .15em solid orange;
-    }
-    100% {
-      opacity: 1;
-      border: none;
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  @-webkit-keyframes blink {
-    50% {
-      border-color: tranparent;
-    }
-  }
-
-  @keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-    } 
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
 }
 
 @keyframes goDown {

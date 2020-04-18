@@ -8,10 +8,12 @@
     <!-- SOURCE: https://css-tricks.com/snippets/css/typewriter-effect/ -->
     <script type="text/javascript" src="typewriter.js">            
     </script>
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
 
     <link rel="icon" type="image/ico" href="img/favicon.ico">
 
@@ -19,80 +21,63 @@
 
     <style>
         body { 
-          animation: fadeInAnimation ease 1s 
-        } 
-
-        html {
-            height: 100%;
-            margin: 0;
+          animation: fadeInAnimation ease 1s;
         }
-        
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 50px
-        }
-        
-        .bg {
-            height: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        hr {
-            height: 3px;
-            width: 20%;
-        }
-
-        .card:hover {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          animation: moveUp ease-in 1s forward;
-        }
-
     </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-  <nav class="navbar navbar-expand-sm navbar-light bg-transparent" style="margin-left: 20px; margin-right: 20px;">
-            
-    <a class="navbar-brand" href="index.html" style="font-size: 400%">bill cao</a>
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<body data-spy="scroll" data-target=".navbar">
+  <nav
+      class="navbar navbar-expand-lg navbar-light bg-transparent"
+      style="margin-left: 20px; margin-right: 20px;"
+    >
+      <a class="navbar-brand" href="index.html" style="font-size: 400%;"
+        >bill cao
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="aboutme.html" style="font-size: x-large;"
+              >about me</a
+            >
+          </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="aboutme.html" style="font-size:x-large;">about me</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html" style="font-size: x-large;"
+              >things i've done</a
+            >
+          </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="projects.html" style="font-size:x-large; color: black">things i've done</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html" style="font-size:x-large;">contact</a>
-            </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="font-size: x-large;"
+              >contact</a
+            >
+          </li>
         </ul>
-    </div>
-</nav>
+      </div>
+    </nav>
 
   <img src="img/banner.jpeg" style="width: 100%; padding-top: 5px">
 
   <div class="container-fluid" style="padding-left: 15%; padding-right: 15%; margin-top: 2%; ">
     <h1 class="title-text">
-      some stuff i've worked on
+      things i've worked on
     </h1>
       
-    <p style="margin-top: 20px; font-size: 150%;"> i've worked on a bunch of stuff, both for various organizations and also just for myself. for now, feel free to peruse through the work i have documented and also check out the organizations i've been a part of below! more about my work in them coming soon. </p>
+    <p style="margin-top: 20px; font-size: 150%;"> I've worked on a bunch of stuff, both for various organizations and also just for myself. For now, feel free to peruse through the work I have documented and also check out the organizations I've been a part of below! More about my work in them coming soon. </p>
   </div>
 
   <div class="container-fluid" style="padding: 20px; background-color: #FFF">
@@ -114,7 +99,7 @@
       </div>
     </div>
     
-    <p style="margin-top: 20px; font-size: 150%; padding-left: 10%;"> writeups coming soon for: </p>
+    <p style="margin-top: 20px; font-size: 150%; padding-left: 15%; padding-right: 15%;"> writeups coming soon for: </p>
 
     <div class="row" style="padding-left: 10%; padding-right: 10%">
 

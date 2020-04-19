@@ -7,9 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- SOURCE: https://css-tricks.com/snippets/css/typewriter-effect/ -->
-    <script type="text/javascript" src="jsscripts/typewriter.js"></script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -22,17 +19,23 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Style -->
-    <link rel="stylesheet" href="style.css" />
 
-    <link rel="icon" type="image/ico" href="img/favicon.ico" />
 
     <title>Bill Cao - Student at UC Berkeley</title>
 
+    <style>
+      body {
+        animation: fadeInAnimation ease 1s;
+      }
+    </style>
   </head>
 
-  <body data-spy="scroll" data-target=".navbar">
-    <nav
+  <body
+    data-spy="scroll"
+    data-target=".navbar"
+  >
+    <div class="bg">
+      <nav
       class="navbar navbar-expand-lg navbar-light bg-transparent"
       style="margin-left: 20px; margin-right: 20px;"
     >
@@ -74,60 +77,6 @@
         </ul>
       </div>
     </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <img
-          id="main-gif"
-          style="width: 100%; height: 100%;"
-          src="img/bayanimation.gif"
-        />
-        <script type="text/javascript"></script>
-      </div>
-
-      <div style="background-color: #fff;">
-        <div
-          style="
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-top: 5%;
-            padding-bottom: 5%;
-          "
-        >
-          <div class="row">
-            <h1 class="title-text">hey i'm bill <br/></h1>
-          </div>
-
-          <div class="row">
-            <h1>
-              <a
-                href=""
-                class="typewrite"
-                data-period="2000"
-                style="font-family: monospace; color: #000;"
-                data-type='[ " comp sci, data sci @ berkeley l&s", " public policy @ berkeley goldman", " urbanist, transit enthusiast", " thrifting aficionado" ]'
-              >
-                <span class="wrap"></span>
-              </a>
-            </h1>
-          </div>
-
-          <div class="row">
-            <p style="margin-top: 20px; font-size: x-large;">
-              I'm interested in bridging the gap between people, computing, and
-              data especially when it comes to sustainability <br/>
-            </p>
-            <p style="font-size: x-large;">
-              Welcome to my website, hope you find what you're looking for
-            </p>
-          </div>
-        </div>
-
-        <p style="font-size: 8px; margin-bottom: 20px; text-align: center;">
-          site designed by me while in quarantine during covid-19 (including
-          skyline animation!)
-        </p>
-      </div>
     </div>
   </body>
 </html>
